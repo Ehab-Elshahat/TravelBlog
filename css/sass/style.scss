@@ -477,12 +477,31 @@ header {
 
     .social-box {
       color: #fff;
-      font-size: 18px;
-
       .social-icon {
         margin-right: 10px;
       }
+      @media(max-width: 991px) {
+        display: inline-block;
+        width: calc(100% / 2);
+        float: left;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      @media (max-width: 575px) {
+        width: 100%;
+        float: none;
+      }
     }
+    @media(max-width: 991px) {
+      display: block;
+      overflow: hidden;
+    }
+  }
+  @media (max-width: 991px) {
+    padding-bottom: 0;
+  }
+  @media (max-width: 575px) {
+    
   }
 }
 // End Social Bar
@@ -490,10 +509,10 @@ header {
 // Start Imgs
 .imgs {
   display: flex;
+  overflow: hidden;
 
   .img-box {
     position: relative;
-    height: 200px;
 
     img {
       width: 100%;
@@ -524,6 +543,19 @@ header {
     &:hover .img-overlay {
       display: block;
     }
+    @media (max-width: 991px) {
+      width: calc(100% / 3);
+      display: inline-block;
+      float: left;
+    }
+    @media(max-width: 575px) {
+      width: 100%;
+      float: none;
+      display: block;
+    }
+  }
+  @media (max-width: 991px) {
+    display: block;
   }
 }
 // End Imgs
@@ -532,6 +564,7 @@ header {
 footer {
   background-color:#696969;
   padding: 50px 0;
+  overflow: hidden;
 
   .footer-left {
     float: left;
@@ -543,29 +576,38 @@ footer {
 
     img {
       width: 200px;
-      height: 200px;
       margin-right: 30px;
     }
     .about-me {
 
       h3 {
         margin-top: 0;
+        margin-bottom: 5px;
         font-weight: normal;
-        font-size: 25px;
       }
       
       p {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 2;
         margin: 0;
       }
 
       a {
-        margin-top: 25px;
+        margin-top: 5px;
         display: block;
         text-decoration: underline;
         color: #FFF;
       }
+    }
+    @media(max-width: 991px) {
+      float: none;
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+    @media(max-width: 575px) {
+      display: block;
+      text-align: center;
     }
   }
 
@@ -574,14 +616,13 @@ footer {
     width: 300px;
     color: #FFF;
     h3 {
-      margin: 0 0 20px 0;
+      margin: 0 0 10px 0;
       font-weight: normal;
-      font-size: 25px;
     }
 
     form label {
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       font-size: 14px;
     }
 
@@ -589,6 +630,9 @@ footer {
       display: block;
       width: 300px;
       padding: 8px 20px;
+      @media(max-width: 991px) {
+        width: 100%;
+      }
     }
 
     form input[type="submit"] {
@@ -605,6 +649,15 @@ footer {
       &:focus {
         outline: none;
       }
+      @media(max-width: 991px) {
+        width: 100%;
+      }
+    }
+    @media(max-width: 991px) {
+      float: none;
+      display: block;
+      text-align: center;
+      width: 100%;
     }
   }
 }
