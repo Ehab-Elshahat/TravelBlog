@@ -660,5 +660,8 @@ footer {
       width: 100%;
     }
   }
+  @media(max-width: 991px) {
+    padding: 20px 0;
+  }
 }
 // End Footer

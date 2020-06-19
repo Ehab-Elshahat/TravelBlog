@@ -493,5 +493,8 @@ footer {
         display: block;
         text-align: center;
         width: 100%; } }
+  @media (max-width: 991px) {
+    footer {
+      padding: 20px 0; } }
 
 /*# sourceMappingURL=style.css.map */
