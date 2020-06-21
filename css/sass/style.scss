@@ -1,5 +1,5 @@
 // variable
-$hover-color: #009688;
+$hover-color: #303f9f;
 $pragraph-color: #696969;
 
 body {
@@ -19,7 +19,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 .container {
   margin: auto;
@@ -47,7 +47,7 @@ a {
   z-index: 4;
   width: 100%;
   padding: 15px;
-  background-color: rgba(46, 204, 113, 0.9);
+  background-color: $hover-color;
   overflow: hidden;
   .links-container {
     @media (max-width: 991px) {
@@ -75,6 +75,7 @@ a {
     top: 16px;
     left: 54px;
     font-size: 18px;
+    color: #fff;
     cursor: pointer;
     display: none;
     @media (max-width: 991px) {
@@ -103,7 +104,7 @@ a {
         position: absolute;
         height: 100%;
         width: 0;
-        background-color: $hover-color;
+        background-color: #a19230;
         transition: width 0.4s ease-in-out;
         left: 0;
         bottom: 0;
@@ -156,13 +157,13 @@ a {
     li a {
       margin-left: 20px;
       font-size: 22px;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
       display: inline-block;
       position: relative;
 
       &:hover {
         transform: translateY(-5px);
-        color: #fff;
+        color: #a19230;
       }
     }
     @media (max-width: 991px) {

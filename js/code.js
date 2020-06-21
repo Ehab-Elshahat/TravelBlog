@@ -31,10 +31,15 @@ linksContainer.onclick = (e) => {
   e.stopPropagation();
 };
 
-togglerBtn.onclick = (e) => {
+togglerBtn.addEventListener('click', (e) => {
   e.stopPropagation();
   linksContainer.classList.toggle("open");
-};
+})
+
+// togglerBtn.onclick = (e) => {
+//   e.stopPropagation();
+//   linksContainer.classList.toggle("open");
+// };
 
 document.addEventListener("click", (e) => {
   if (e.target !== togglerBtn && e.target !== linksContainer) {
