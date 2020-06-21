@@ -1,5 +1,5 @@
 // variable
-$hover-color: #0c2ad4;
+$hover-color: #009688;
 $pragraph-color: #696969;
 
 body {
@@ -47,7 +47,7 @@ a {
   z-index: 4;
   width: 100%;
   padding: 15px;
-  background-color: #d7d7d7;
+  background-color: rgba(46, 204, 113, 0.9);
   overflow: hidden;
   .links-container {
     @media (max-width: 991px) {
@@ -84,35 +84,39 @@ a {
 
   .links {
     display: flex;
-    width: 50%;
+    width: 60%;
     float: left;
     justify-content: space-around;
+    overflow: hidden;
     @media (max-width: 991px) {
       display: block;
       width: 100%;
     }
     li a {
+      display: inline-block;
       font-size: 18px;
-      padding-bottom: 5px;
+      padding: 5px 15px;
+      margin-right: 10px;
       position: relative;
       &::before {
         content: "";
         position: absolute;
-        height: 3px;
+        height: 100%;
         width: 0;
         background-color: $hover-color;
-        transition: width 0.3s ease-in-out;
+        transition: width 0.4s ease-in-out;
         left: 0;
         bottom: 0;
+        z-index: -1;
       }
       &:hover::before {
         width: 100%;
       }
       &:hover {
-        color: $hover-color;
+        color: #fff;
       }
       &.active {
-        color: $hover-color;
+        color: #fff;
         &::before {
           width: 100%;
         }
@@ -147,7 +151,7 @@ a {
 
   .soial {
     display: flex;
-    width: 50%;
+    width: 40%;
     justify-content: flex-end;
     li a {
       margin-left: 20px;
@@ -159,6 +163,7 @@ a {
       &:hover {
         transition: transform 0.3s ease-in-out;
         transform: translateY(-5px);
+        color: $hover-color;
       }
     }
     @media (max-width: 991px) {
@@ -355,7 +360,7 @@ header {
 // Start Swim
 .swim {
   padding: 50px 0 20px 0;
-
+  // display: none;
   .swim-img {
     height: 450px;
 
@@ -530,7 +535,7 @@ header {
         line-height: 2;
         font-size: 14px;
         margin: 0;
-        @media(max-width: 575px) {
+        @media (max-width: 575px) {
           display: block;
           position: absolute;
           top: 50%;

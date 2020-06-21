@@ -39,7 +39,7 @@ a {
   z-index: 4;
   width: 100%;
   padding: 15px;
-  background-color: #d7d7d7;
+  background-color: rgba(46, 204, 113, 0.9);
   overflow: hidden; }
   @media (max-width: 991px) {
     .navbar .links-container {
@@ -69,32 +69,36 @@ a {
         display: block; } }
   .navbar .links {
     display: flex;
-    width: 50%;
+    width: 60%;
     float: left;
-    justify-content: space-around; }
+    justify-content: space-around;
+    overflow: hidden; }
     @media (max-width: 991px) {
       .navbar .links {
         display: block;
         width: 100%; } }
     .navbar .links li a {
+      display: inline-block;
       font-size: 18px;
-      padding-bottom: 5px;
+      padding: 5px 15px;
+      margin-right: 10px;
       position: relative; }
       .navbar .links li a::before {
         content: "";
         position: absolute;
-        height: 3px;
+        height: 100%;
         width: 0;
-        background-color: #0c2ad4;
-        transition: width 0.3s ease-in-out;
+        background-color: #009688;
+        transition: width 0.4s ease-in-out;
         left: 0;
-        bottom: 0; }
+        bottom: 0;
+        z-index: -1; }
       .navbar .links li a:hover::before {
         width: 100%; }
       .navbar .links li a:hover {
-        color: #0c2ad4; }
+        color: #fff; }
       .navbar .links li a.active {
-        color: #0c2ad4; }
+        color: #fff; }
         .navbar .links li a.active::before {
           width: 100%; }
       @media (max-width: 991px) {
@@ -119,7 +123,7 @@ a {
           background-color: #d7d7d7; } }
   .navbar .soial {
     display: flex;
-    width: 50%;
+    width: 40%;
     justify-content: flex-end; }
     .navbar .soial li a {
       margin-left: 20px;
@@ -128,7 +132,8 @@ a {
       position: relative; }
       .navbar .soial li a:hover {
         transition: transform 0.3s ease-in-out;
-        transform: translateY(-5px); }
+        transform: translateY(-5px);
+        color: #009688; }
     @media (max-width: 991px) {
       .navbar .soial {
         width: 100%;
@@ -192,7 +197,7 @@ header {
     .features .feat-box span {
       position: absolute;
       background-color: #fff;
-      color: #0c2ad4;
+      color: #009688;
       padding: 20px 40px;
       font-size: 22px;
       top: 50%;
@@ -201,7 +206,7 @@ header {
       cursor: pointer;
       transition: all 0.3s ease-in-out; }
       .features .feat-box span:hover {
-        background-color: #0c2ad4;
+        background-color: #009688;
         color: #fff; }
     @media (max-width: 575px) {
       .features .feat-box {
@@ -307,7 +312,7 @@ header {
         margin: 10px 0;
         font-weight: normal; }
         .swim .swim-info .swim-link h2:hover {
-          color: #0c2ad4; }
+          color: #009688; }
       .swim .swim-info .swim-link p {
         font-size: 15px;
         color: #696969; }
@@ -348,7 +353,7 @@ header {
 
 .social-bar {
   padding: 15px 0;
-  background-color: #0c2ad4; }
+  background-color: #009688; }
   .social-bar .social-container {
     display: flex;
     justify-content: space-between;
@@ -485,7 +490,7 @@ footer {
       padding: 8px;
       text-align: center;
       margin-top: 8px;
-      background-color: #0c2ad4;
+      background-color: #009688;
       color: #fff;
       font-size: 18px;
       border: none; }
