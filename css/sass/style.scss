@@ -156,14 +156,13 @@ a {
     li a {
       margin-left: 20px;
       font-size: 22px;
-
+      transition: all .3s ease-in-out;
       display: inline-block;
       position: relative;
 
       &:hover {
-        transition: transform 0.3s ease-in-out;
         transform: translateY(-5px);
-        color: $hover-color;
+        color: #fff;
       }
     }
     @media (max-width: 991px) {

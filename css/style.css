@@ -128,12 +128,12 @@ a {
     .navbar .soial li a {
       margin-left: 20px;
       font-size: 22px;
+      transition: all .3s ease-in-out;
       display: inline-block;
       position: relative; }
       .navbar .soial li a:hover {
-        transition: transform 0.3s ease-in-out;
         transform: translateY(-5px);
-        color: #009688; }
+        color: #fff; }
     @media (max-width: 991px) {
       .navbar .soial {
         width: 100%;
