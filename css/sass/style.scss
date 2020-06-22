@@ -183,7 +183,7 @@ a {
 
 // Start Header
 header {
-  margin-top: 65px;
+  margin-top: 60px;
   position: relative;
   z-index: 1;
 
@@ -204,12 +204,10 @@ header {
     h1 {
       font-size: 55px;
       margin: 0;
-      @media (max-width: 991px) {
-        font-size: 40px;
-      }
-      @media (max-width: 575px) {
-        font-size: 30px;
-      }
+      
+    }
+    @media (max-width: 991px) {
+      display: none;
     }
   }
 }
