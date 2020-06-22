@@ -49,3 +49,8 @@ document.addEventListener("click", (e) => {
 
 // Animation section
 AOS.init();
+
+// Scroll To Top Btn
+document.querySelector(".scroll-top").onclick = () => {
+  window.scrollTo(0,0)
+}
