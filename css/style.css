@@ -59,7 +59,7 @@ a {
       width: 100%;
       left: -100%;
       min-height: 273px;
-      background-color: #d7d7d7;
+      background-color: #303f9f;
       padding-bottom: 20px; } }
   .navbar .toggle-btn {
     position: absolute;
@@ -122,6 +122,11 @@ a {
           .navbar .links li a.active {
             background-color: #d7d7d7;
             color: #333; } }
+    @media (max-width: 991px) and (max-width: 575px) {
+      .navbar .links li a.active {
+        background-color: red;
+        color: #fff; } }
+
       @media (max-width: 575px) {
         .navbar .links li a {
           color: #333;

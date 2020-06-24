@@ -69,7 +69,7 @@ a {
       width: 100%;
       left: -100%;
       min-height: 273px;
-      background-color: #d7d7d7;
+      background-color: #303f9f;
       padding-bottom: 20px;
     }
   }
@@ -139,6 +139,10 @@ a {
         &.active {
           background-color: #d7d7d7;
           color: #333;
+          @media (max-width: 575px) {
+            background-color: red;
+            color: #fff;
+          }
         }
         text-align: center;
         display: block;

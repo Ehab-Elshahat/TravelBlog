@@ -36,11 +36,6 @@ togglerBtn.addEventListener('click', (e) => {
   linksContainer.classList.toggle("open");
 })
 
-// togglerBtn.onclick = (e) => {
-//   e.stopPropagation();
-//   linksContainer.classList.toggle("open");
-// };
-
 document.addEventListener("click", (e) => {
   if (e.target !== togglerBtn && e.target !== linksContainer) {
     linksContainer.classList.remove("open");
