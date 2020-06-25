@@ -467,7 +467,6 @@ header {
       align-items: center;
       color: $pragraph-color;
       font-size: 14px;
-
       .view {
         margin-right: 20px;
       }
@@ -489,6 +488,11 @@ header {
       @media (max-width: 575px) {
         display: block;
         font-size: 16px;
+      }
+      &.last {
+        @media (max-width: 575px) {
+          padding-bottom: 20px;
+        }
       }
     }
     @media (max-width: 575px) {

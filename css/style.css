@@ -376,6 +376,9 @@ header {
         .swim .swim-info .activities {
           display: block;
           font-size: 16px; } }
+      @media (max-width: 575px) {
+        .swim .swim-info .activities.last {
+          padding-bottom: 20px; } }
     @media (max-width: 575px) {
       .swim .swim-info {
         padding: 20px 0 0 0;
