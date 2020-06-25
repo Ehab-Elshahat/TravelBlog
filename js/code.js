@@ -1,5 +1,5 @@
 // Add class active on navbar links
-let navLinks = document.querySelectorAll(".navbar .links li a");
+let navLinks = document.querySelectorAll(".navbar .links li ");
 
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -31,10 +31,10 @@ linksContainer.onclick = (e) => {
   e.stopPropagation();
 };
 
-togglerBtn.addEventListener('click', (e) => {
+togglerBtn.addEventListener("click", (e) => {
   e.stopPropagation();
   linksContainer.classList.toggle("open");
-})
+});
 
 document.addEventListener("click", (e) => {
   if (e.target !== togglerBtn && e.target !== linksContainer) {
@@ -46,6 +46,14 @@ document.addEventListener("click", (e) => {
 AOS.init();
 
 // Scroll To Top Btn
-document.querySelector(".scroll-top").onclick = () => {
-  window.scrollTo(0,0)
-}
+let scrollBtun = document.querySelector(".scroll-top");
+
+window.onscroll = () => {
+  this.scrollY > 600
+    ? (scrollBtun.style.display = "block")
+    : (scrollBtun.style.display = "none");
+};
+
+scrollBtun.onclick = () => {
+  window.scrollTo(0, 0);
+};
